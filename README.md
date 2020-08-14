@@ -1,4 +1,4 @@
-#Sean Joo's Personal Website
+<h1>Sean Joo's Personal Website</h1>
 <p>This is my <a href="https://seanjoo4.github.io/"personal website</a> using HTML, CSS, & JavaScript. Please feel free to explore my page, and contact me for any inquiries!</p>
 <p>Implemented a template from <a href="https://bootstrapmade.com/"bootstrapmade</a>!</p>
 <h2> Contact Information </h2>

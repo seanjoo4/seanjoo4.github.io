@@ -384,7 +384,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Hobbies
 --------------------------------------------------------------*/
 .skills .progress {
   height: 50px;
@@ -433,7 +433,7 @@ section {
   width: auto;
   height: auto;
   padding: 1rem 3rem;
-  color: whitesmoke;
+  color: #FFFFFF;
   background-color: #272829;
   border-radius: 2rem;
   border: .1rem solid #272829;
@@ -442,7 +442,7 @@ section {
 
 .resume #resume-button:hover{
   background-color: #149ddd;
-  color: white;
+  color: #FFFFFF;
   border-color: #149ddd;
   box-shadow: rgba(110, 123, 131, 0.05);
 }

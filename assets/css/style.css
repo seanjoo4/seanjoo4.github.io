@@ -443,7 +443,7 @@ section {
 .resume #resume-button:hover{
   background-color: #149ddd;
   color: white;
-  border-color: #18d26e;
+  border-color: #149ddd;
   box-shadow: rgba(110, 123, 131, 0.05);
 }
 

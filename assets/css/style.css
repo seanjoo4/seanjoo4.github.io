@@ -549,6 +549,11 @@ section {
   border-left: 1px solid #37b3ed;
 }
 
+.projects .projects-wrap .img-fluid {
+  display: block;
+  margin: 0 auto;
+}
+
 .projects .projects-wrap:hover::before {
   top: 0;
   left: 0;

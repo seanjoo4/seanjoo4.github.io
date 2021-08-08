@@ -394,6 +394,11 @@ section {
   color: #050d18;
 }
 
+.education-img {
+    height: 200px;
+    width: 200px;
+}
+
 .resume #resume-button{
   width: auto;
   height: auto;
@@ -626,6 +631,10 @@ section {
 --------------------------------------------------------------*/
 .contact {
   padding-bottom: 130px;
+}
+
+.icon {
+    text-align: center;
 }
 
 .contact .info {

@@ -399,8 +399,13 @@ section {
     width: 200px;
 }
 
-.purdue-img {
+.rutgers-img {
     height: 150px;
+    width: 220px;
+}
+
+.purdue-img {
+    height: 100px;
     width: 300px;
 }
 

@@ -399,6 +399,16 @@ section {
     width: 200px;
 }
 
+.purdue-img {
+    height: 150px;
+    width: 300px;
+}
+
+.textron-img {
+    height: 200px;
+    width: 400px;
+}
+
 .resume #resume-button{
   width: auto;
   height: auto;

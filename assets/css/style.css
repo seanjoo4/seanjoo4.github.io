@@ -314,6 +314,78 @@ section {
   color: #173b6c;
 }
 
+p.shift {
+    margin-left: 30px;
+}
+
+/* Styling the area of the slides */
+#slideshow {
+  overflow: hidden;
+  height: 410px;
+  width: 728px;
+  margin: 0 auto;
+}
+
+/* Style each of the sides
+with a fixed width and height */
+.slide {
+  float: left;
+  height: 210px;
+  width: 728px;
+}
+
+/* Add animation to the slides */
+.slide-wrapper {
+  /* Calculate the total width on the
+  basis of number of slides */
+  width: calc(728px * 5);
+
+  /* Specify the animation with the
+  duration and speed */
+  animation: slide 20s ease infinite;
+}
+
+.chill-img {
+    height: 300px;
+    width: 250px;
+}
+
+.casual-img {
+    height: 250px;
+    width: 250px;
+}
+
+.soccer-img {
+    height: 350px;
+    width: 500px;
+}
+
+/* Define the animation
+for the slideshow */
+@keyframes slide {
+  /* Calculate the margin-left for
+  each of the slides */
+  20% {
+    margin-left: 0px;
+  }
+
+  40% {
+    margin-left: calc(-728px * 1);
+  }
+
+  60% {
+    margin-left: calc(-728px * 2);
+  }
+
+  80% {
+    margin-left: calc(-728px * 3);
+  }
+
+  100% {
+      margin-left: calc(-728px * 4);
+    }
+}
+
 .about .content ul {
   list-style: none;
   padding: 0;
@@ -405,8 +477,8 @@ section {
 }
 
 .purdue-img {
-    height: 100px;
-    width: 300px;
+    height: 150px;
+    width: 250px;
 }
 
 .textron-img {

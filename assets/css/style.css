@@ -350,6 +350,11 @@ with a fixed width and height */
     width: 250px;
 }
 
+.mocha-img {
+    height: 300px;
+    width: 200px;
+}
+
 .casual-img {
     height: 250px;
     width: 250px;

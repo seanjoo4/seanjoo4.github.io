@@ -486,6 +486,11 @@ for the slideshow */
     width: 250px;
 }
 
+.jpm-img {
+    height: 250px;
+    width: 450px;
+}
+
 .textron-img {
     height: 200px;
     width: 400px;

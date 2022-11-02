@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html>
+<script type="text/javascript">
+    function display_time() {
+        var x = new Date()
+        var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
+        hours = x.getHours( ) % 12;
+        hours = hours ? hours : 12;
+        hours=hours.toString().length==1? 0+hours.toString() : hours;
+
+        var minutes=x.getMinutes().toString()
+        minutes=minutes.length==1 ? 0+minutes : minutes;
+
+        var seconds=x.getSeconds().toString()
+        seconds=seconds.length==1 ? 0+seconds : seconds;
+
+        var month=(x.getMonth() +1).toString();
+        month=month.length==1 ? 0+month : month;
+
+        var dt=x.getDate().toString();
+        dt=dt.length==1 ? 0+dt : dt;
+
+        var x1 = hours + ":" +  minutes + ":" +  seconds + " " + ampm;
+        document.getElementById('ct7').style.fontSize='70px';
+        document.getElementById('ct7').style.color='#0000FF';
+        document.getElementById('ct7').innerHTML = x1;
+        refresh();
+    }
+    function refresh(){
+        var refresh=1000; // Refresh rate in milli seconds
+        mytime=setTimeout('display_time()',refresh)
+    }
+    refresh()
+</script>
+
 <head>
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
-<script>
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /*loop through a collection of all HTML elements:*/
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain attribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /*make an HTTP request using the attribute value as the file name:*/
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /*remove the attribute, and call this function once more:*/
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
-        }
-      }
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /*exit the function:*/
-      return;
-    }
-  }
-};
-</script>
 
 <body>
-
-<div w3-include-html="password.html"></div>
-
-<script>
-includeHTML();
-</script>
-
+<div>
+    <img src="assets/img/lugia.gif" alt="Lugia GIF" width="100%">
+</div>
+<div class="centered" style="font-size:500%; font-family: Courier New, monospace">Opening Soon</div>
+<div class="center-textbox">
+    <input class="centered" type="password" style="font-family: Courier New, monospace" placeholder="Password">
+</div>
+<br>
+<div class="centered" style="font-family: Courier New, monospace" onload=display_time();>
+    <span id='ct7'></span>
+</div>
 </body>
 </html>

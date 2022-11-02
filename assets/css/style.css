@@ -2,6 +2,11 @@
     text-align:center
 }
 
+.center-textbox {
+  margin:0 auto;
+  width:250px;
+}
+
 input:focus::placeholder {
   color: transparent;
 }

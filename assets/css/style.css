@@ -120,11 +120,11 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   bottom: 0;ƒtwi
-  width: 300px;
+  width: 240px;
   transition: all ease-in-out 0.5s;
-  z-index: 9997;
+  z-index: 9999;
   transition: all 0.5s;
-  padding: 0 15px;
+  padding: 15px;
   background: #040b14;
   overflow-y: auto;
 }
@@ -550,13 +550,20 @@ for the slideshow */
 }
 
 .jpm-img {
-    height: 250px;
+    height: 80px;
+    width: 500px;
+}
+
+.bb-img {
+    height: 100px;
     width: 450px;
 }
 
 .textron-img {
     height: 200px;
     width: 400px;
+    position: relative;
+    left: -70px;
 }
 
 .resume #resume-button{
